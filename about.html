@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us - Unique Pharmacy</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    background: #0f0f1a;
+    color: white;
+    line-height: 1.6;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.hero {
+    text-align: center;
+    padding: 70px 20px;
+    background: linear-gradient(135deg, #6a0dad, #9b30ff);
+    border-bottom-left-radius: 30px;
+    border-bottom-right-radius: 30px;
+}
+
+.hero h1 {font-size: 38px;margin-bottom: 10px}
+.hero p {opacity: 0.9}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 24px;
+    background: white;
+    color: #6a0dad;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.3);
+}
+
+.section {padding: 55px 20px}
+
+h2 {margin-bottom: 15px}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 18px;
+}
+
+.card {
+    background: rgba(255,255,255,0.05);
+    padding: 18px;
+    border-radius: 16px;
+    backdrop-filter: blur(10px);
+    transition: 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
+}
+
+.card h3 {margin-bottom: 8px}
+
+.stats {text-align: center}
+.stats h2 {font-size: 32px;color: #bb86fc}
+
+.footer {
+    background: #1a1a2e;
+    padding: 40px 20px;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 20px;
+}
+
+.footer a {
+    color: #ccc;
+    text-decoration: none;
+    display:block;
+    margin:5px 0;
+    transition: 0.2s;
+}
+
+.footer a:hover {
+    color: white;
+}
+
+.footer h3 {margin-bottom: 10px}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    opacity: 0.7;
+}
+
+@media(max-width:768px){
+    .hero h1{font-size:28px}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<section class="hero">
+    <h1>Your Trusted Partner in Health & Wellness</h1>
+    <p>Serving quality medicines, care & trust — every single day.</p>
+    <a href="contact.html" class="btn">Contact Us</a>
+</section>
+
+<!-- STORY -->
+<section class="section container">
+    <h2>Our Story</h2>
+    <p>
+        Unique Pharmacy was founded in December 2024 by Mr. Faisal Hamdulay, with the strong support of Branch Head Mr. Saeed Bukhari, with a vision to deliver trusted healthcare with exceptional value.
+        <br><br>
+        From day one, we entered the market with highly competitive offers and customer-focused service, quickly earning the trust and appreciation of the Bhendi Bazar community. Our commitment to affordability, authenticity, and care has been at the core of our growth.
+        <br><br>
+        This outlet marks the third flagship pharmacy under Mr. Faisal Hamdulay’s leadership, following the success of stores in Mazgaon and Khed, Maharashtra. Each location reflects the same dedication to quality service and community trust.
+        <br><br>
+        At Unique Pharmacy, we aim to make healthcare more accessible, reliable, and convenient — building lasting relationships while serving every customer with care and integrity.
+    </p>
+</section>
+
+<!-- MISSION VISION VALUES -->
+<section class="section container grid">
+    <div class="card">
+        <h3>Our Mission</h3>
+        <p>Deliver genuine medicines with care and responsibility.</p>
+    </div>
+    <div class="card">
+        <h3>Our Vision</h3>
+        <p>Become the most trusted pharmacy in the community.</p>
+    </div>
+    <div class="card">
+        <h3>Our Values</h3>
+        <p>Integrity, customer care, affordability, and trust in every service we provide.</p>
+    </div>
+</section>
+
+<!-- SERVICES -->
+<section class="section container">
+    <h2>What We Offer</h2>
+    <div class="grid">
+        <div class="card">💊 Prescription Medicines</div>
+        <div class="card">🛒 OTC Products</div>
+        <div class="card">🧘 Health & Wellness</div>
+        <div class="card">👶 Baby Care</div>
+        <div class="card">🏥 Medical Equipment</div>
+        <div class="card">🚚 Home Delivery Services</div>
+        <div class="card">📦 Nationwide Courier</div>
+        <div class="card">💬 Expert Consultation</div>
+    </div>
+</section>
+
+<!-- STATS -->
+<section class="section container grid stats">
+    <div>
+        <h2>2500+</h2>
+        <p>Happy Customers</p>
+    </div>
+    <div>
+        <h2>1000+</h2>
+        <p>Products Available</p>
+    </div>
+    <div>
+        <h2>24/7</h2>
+        <p>Service</p>
+    </div>
+</section>
+
+<!-- CTA -->
+<section class="section hero">
+    <h2>Need medicines or assistance?</h2>
+    <p>We're just one click away.</p>
+    <a href="contact.html" class="btn">Get in Touch</a>
+</section>
+
+<!-- FOOTER -->
+<div class="footer">
+    <div class="container footer-grid">
+        <div>
+            <h3>Unique Pharmacy</h3>
+            <p>Your trusted healthcare partner.</p>
+        </div>
+        <div>
+            <h3>Quick Links</h3>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact</a>
+        </div>
+        <div>
+            <h3>Contact</h3>
+            <p>📍 Shop No. G55, Al Ezz Tower, Bohri Mohalla, Bhendi Bazaar, Kumbharwada</p>
+            <p>📞 +91 9594290108</p>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        © 2026 Unique Pharmacy | All Rights Reserved
+    </div>
+</div>
+
+</body>
+</html>
