@@ -1,0 +1,499 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Contact Unique Pharmacy – 24×7 support, WhatsApp ordering, home delivery. Located in Bhendi Bazaar, Mumbai. Call +91 95942 90148.">
+<meta name="keywords" content="contact unique pharmacy, pharmacy bhendi bazaar contact, whatsapp medicine order mumbai">
+<meta property="og:title" content="Contact Unique Pharmacy – 24×7 Support">
+<meta property="og:description" content="Get in touch for medicines, orders, and queries. WhatsApp support available 24×7.">
+<meta property="og:image" content="https://i.postimg.cc/FRDqcPLK/1769888939545-2.jpg">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#4F378B">
+<meta name="mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-capable" content="yes">
+<meta name="apple-mobile-web-app-title" content="Unique Pharmacy">
+<link rel="apple-touch-icon" href="https://i.postimg.cc/FRDqcPLK/1769888939545-2.jpg">
+<link rel="icon" type="image/jpeg" href="https://i.postimg.cc/FRDqcPLK/1769888939545-2.jpg">
+<title>Contact Us – Unique Pharmacy | 24×7 Support</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<style>
+/* ══ M3 TOKENS (identical to index.html) ══ */
+:root {
+  --md-primary:            #4F378B;
+  --md-on-primary:         #FFFFFF;
+  --md-primary-container:  #EADDFF;
+  --md-on-primary-container: #21005D;
+  --md-secondary:          #625B71;
+  --md-secondary-container:#E8DEF8;
+  --md-tertiary:           #7D5260;
+  --md-tertiary-container: #FFD8E4;
+  --md-surface:            #FFFBFE;
+  --md-surface-variant:    #E7E0EC;
+  --md-on-surface:         #1C1B1F;
+  --md-on-surface-variant: #49454F;
+  --md-outline:            #79747E;
+  --md-outline-variant:    #CAC4D0;
+  --md-surface-1:          #F3EDF7;
+  --md-surface-2:          #EDE8F5;
+  --r-sm: 8px; --r-md: 12px; --r-lg: 16px; --r-xl: 24px; --r-full: 50px;
+  --shadow-1: 0 1px 2px rgba(0,0,0,.08), 0 1px 3px rgba(0,0,0,.04);
+  --shadow-2: 0 2px 6px rgba(0,0,0,.10), 0 1px 4px rgba(0,0,0,.06);
+  --shadow-3: 0 4px 12px rgba(0,0,0,.12), 0 2px 6px rgba(0,0,0,.06);
+}
+
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+html { scroll-behavior: smooth; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  background: var(--md-surface);
+  color: var(--md-on-surface);
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  padding-bottom: 40px;
+}
+
+/* ══ HEADER ══ */
+header {
+  background: linear-gradient(160deg, #2D1B69 0%, #4F378B 55%, #6B4FA8 100%);
+  color: #fff;
+  padding: 36px 20px 28px;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+header::before {
+  content: '';
+  position: absolute; inset: 0;
+  background:
+    radial-gradient(ellipse 60% 50% at 85% 15%, rgba(208,188,255,.18) 0%, transparent 70%),
+    radial-gradient(ellipse 40% 60% at 10% 80%, rgba(255,255,255,.07) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.header-inner { position: relative; z-index: 1; }
+
+.logo-wrap {
+  display: inline-block;
+  width: 80px; height: 80px;
+  border-radius: 50%;
+  padding: 3px;
+  background: linear-gradient(135deg, rgba(255,255,255,.5), rgba(255,255,255,.15));
+  margin-bottom: 12px;
+  box-shadow: 0 4px 24px rgba(0,0,0,.3);
+  animation: logo-in .6s cubic-bezier(.34,1.56,.64,1) both;
+}
+
+@keyframes logo-in {
+  from { opacity: 0; transform: scale(.6) translateY(-10px); }
+  to   { opacity: 1; transform: scale(1) translateY(0); }
+}
+
+.logo-wrap img { width: 100%; height: 100%; border-radius: 50%; object-fit: cover; }
+
+header h1 {
+  font-size: clamp(22px, 6vw, 28px);
+  font-weight: 900;
+  letter-spacing: 1px;
+  animation: fade-up .5s .1s both;
+}
+
+.tagline {
+  font-size: 13px;
+  opacity: .78;
+  margin: 4px 0 0;
+  font-weight: 500;
+  animation: fade-up .5s .2s both;
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ══ CARD ══ */
+.card {
+  background: var(--md-surface);
+  border-radius: var(--r-xl);
+  padding: 20px;
+  margin: 12px 14px;
+  box-shadow: var(--shadow-2);
+  border: 1px solid var(--md-outline-variant);
+}
+
+.sec-header {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.sec-icon {
+  width: 40px; height: 40px;
+  border-radius: var(--r-md);
+  background: var(--md-primary-container);
+  display: flex; align-items: center; justify-content: center;
+  flex-shrink: 0;
+}
+
+.sec-icon .material-icons-round { color: var(--md-on-primary-container); font-size: 22px; }
+
+.sec-header h2 {
+  font-size: 17px;
+  font-weight: 800;
+  color: var(--md-on-surface);
+}
+
+/* ══ TOP 3 CARDS ══ */
+.top-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+  margin: 12px 14px;
+}
+
+.top-card {
+  background: var(--md-surface);
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--r-xl);
+  padding: 16px 12px;
+  text-align: center;
+  box-shadow: var(--shadow-1);
+}
+
+.top-card-icon {
+  width: 44px; height: 44px;
+  border-radius: var(--r-md);
+  background: var(--md-primary-container);
+  display: flex; align-items: center; justify-content: center;
+  margin: 0 auto 10px;
+}
+
+.top-card-icon .material-icons-round { font-size: 24px; color: var(--md-primary); }
+
+.top-card h3 {
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--md-on-surface);
+  margin-bottom: 4px;
+}
+
+.top-card p {
+  font-size: 11px;
+  color: var(--md-on-surface-variant);
+  line-height: 1.45;
+}
+
+/* ══ FORM ══ */
+.form-field {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--r-lg);
+  border: 1.5px solid var(--md-outline-variant);
+  background: var(--md-surface-1);
+  font-family: 'Nunito', sans-serif;
+  font-size: 14px;
+  color: var(--md-on-surface);
+  outline: none;
+  transition: border-color .2s, box-shadow .2s;
+  margin-bottom: 10px;
+  display: block;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.form-field::placeholder { color: var(--md-on-surface-variant); }
+
+.form-field:focus {
+  border-color: var(--md-primary);
+  box-shadow: 0 0 0 3px rgba(79,55,139,.12);
+  background: var(--md-surface);
+}
+
+textarea.form-field { resize: vertical; min-height: 100px; }
+
+.submit-btn {
+  width: 100%;
+  padding: 15px;
+  border-radius: var(--r-lg);
+  border: none;
+  background: var(--md-primary);
+  color: white;
+  font-family: 'Nunito', sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex; align-items: center; justify-content: center; gap: 8px;
+  transition: all .2s cubic-bezier(.34,1.56,.64,1);
+  box-shadow: 0 4px 14px rgba(79,55,139,.35);
+}
+
+.submit-btn:active { transform: scale(.97); }
+.submit-btn .material-icons-round { font-size: 20px; }
+
+/* ══ INFO GRID ══ */
+.info-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  margin-top: 16px;
+  padding-top: 16px;
+  border-top: 1px solid var(--md-outline-variant);
+}
+
+.info-item {
+  background: var(--md-surface-1);
+  border: 1px solid var(--md-outline-variant);
+  border-radius: var(--r-lg);
+  padding: 14px 12px;
+}
+
+.info-item-icon {
+  width: 36px; height: 36px;
+  border-radius: var(--r-sm);
+  background: var(--md-secondary-container);
+  display: flex; align-items: center; justify-content: center;
+  margin-bottom: 8px;
+}
+
+.info-item-icon .material-icons-round { font-size: 18px; color: var(--md-secondary); }
+
+.info-item strong {
+  display: block;
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--md-on-surface);
+  margin-bottom: 3px;
+}
+
+.info-item span {
+  font-size: 11.5px;
+  color: var(--md-on-surface-variant);
+  line-height: 1.5;
+}
+
+/* ══ MAP ══ */
+.map-frame {
+  width: 100%;
+  height: 300px;
+  border-radius: var(--r-lg);
+  border: none;
+  box-shadow: var(--shadow-2);
+  display: block;
+}
+
+/* ══ FOOTER ══ */
+footer {
+  background: linear-gradient(160deg, #1D0E42 0%, #2D1B69 60%, #4F378B 100%);
+  color: white;
+  padding: 36px 20px 28px;
+  text-align: center;
+  margin-top: 32px;
+}
+
+.footer-name {
+  font-size: 18px;
+  font-weight: 900;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+
+.footer-tagline { font-size: 12px; opacity: .65; margin-bottom: 20px; }
+
+.footer-btns {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+  max-width: 360px;
+  margin: 0 auto 20px;
+}
+
+.footer-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  padding: 12px 10px;
+  border-radius: var(--r-lg);
+  font-size: 13px;
+  font-weight: 700;
+  cursor: pointer;
+  text-decoration: none;
+  border: none;
+  font-family: 'Nunito', sans-serif;
+  transition: all .2s;
+}
+
+.footer-btn.phone { background: rgba(255,255,255,.15); color: white; border: 1.5px solid rgba(255,255,255,.25); }
+.footer-btn.link  { background: rgba(255,255,255,.08); color: rgba(255,255,255,.85); border: 1.5px solid rgba(255,255,255,.15); }
+.footer-btn:hover { background: rgba(255,255,255,.25); transform: translateY(-2px); }
+.footer-btn .material-icons-round { font-size: 16px; }
+
+footer small { font-size: 11px; opacity: .4; }
+
+@media (max-width: 380px) {
+  .top-cards { grid-template-columns: 1fr; }
+  .info-grid  { grid-template-columns: 1fr; }
+}
+</style>
+</head>
+<body>
+
+<!-- ══ HEADER ══ -->
+<header>
+  <div class="header-inner">
+    <div class="logo-wrap">
+      <img src="https://ibb.co/QjT78mSs" alt="Unique Pharmacy Logo"
+           onerror="this.onerror=null;this.src='https://i.postimg.cc/FRDqcPLK/1769888939545-2.jpg'">
+    </div>
+    <h1>Contact Us</h1>
+    <p class="tagline">We're here to help — anytime, 24×7</p>
+  </div>
+</header>
+
+<!-- ══ TOP 3 CARDS ══ -->
+<div class="top-cards">
+  <div class="top-card">
+    <div class="top-card-icon"><span class="material-icons-round">support_agent</span></div>
+    <h3>Customer Support</h3>
+    <p>Quick help for orders &amp; general queries 24×7</p>
+  </div>
+  <div class="top-card">
+    <div class="top-card-icon"><span class="material-icons-round">business_center</span></div>
+    <h3>Business Inquiry</h3>
+    <p>Bulk orders or partnership opportunities</p>
+  </div>
+  <div class="top-card">
+    <div class="top-card-icon"><span class="material-icons-round">rate_review</span></div>
+    <h3>Feedback</h3>
+    <p>Help us improve our service &amp; experience</p>
+  </div>
+</div>
+
+<!-- ══ SEND A MESSAGE + INFO ══ -->
+<div class="card">
+  <div class="sec-header">
+    <div class="sec-icon"><span class="material-icons-round">send</span></div>
+    <h2>Send a Message</h2>
+  </div>
+
+  <input  class="form-field" type="text" id="name"    placeholder="Your Name"    required>
+  <input  class="form-field" type="tel"  id="phone"   placeholder="Phone Number" required>
+
+  <select class="form-field" id="queryType">
+    <option>General Inquiry</option>
+    <option>Order Issue</option>
+    <option>Medicine Inquiry</option>
+    <option>Complaint</option>
+    <option>Feedback</option>
+    <option>Bulk Order</option>
+    <option>Partnership</option>
+    <option>Vacancy / Jobs</option>
+  </select>
+
+  <textarea class="form-field" id="message" placeholder="Your Message"></textarea>
+
+  <button class="submit-btn" onclick="sendMessage()">
+    <span class="material-icons-round">send</span> Submit Message
+  </button>
+
+  <!-- ══ CONTACT INFO ══ -->
+  <div class="info-grid">
+    <div class="info-item">
+      <div class="info-item-icon"><span class="material-icons-round">place</span></div>
+      <strong>Visit Us</strong>
+      <span>Shop No. G55, Al Ezz Tower, Bohri Mohalla, Bhendi Bazaar, Mumbai – 400003</span>
+    </div>
+    <div class="info-item">
+      <div class="info-item-icon"><span class="material-icons-round">call</span></div>
+      <strong>Call Us</strong>
+      <span>+91 95942 90148<br>Available 24×7</span>
+    </div>
+    <div class="info-item">
+      <div class="info-item-icon"><span class="material-icons-round">chat</span></div>
+      <strong>WhatsApp</strong>
+      <span>+91 95942 90148<br>Send prescription directly</span>
+    </div>
+    <div class="info-item">
+      <div class="info-item-icon"><span class="material-icons-round">schedule</span></div>
+      <strong>Business Hours</strong>
+      <span>Open 24 hrs · 7 days · 365 days a year</span>
+    </div>
+  </div>
+</div>
+
+<!-- ══ STORE LOCATION ══ -->
+<div class="card">
+  <div class="sec-header">
+    <div class="sec-icon"><span class="material-icons-round">location_on</span></div>
+    <h2>Store Location</h2>
+  </div>
+  <iframe
+    class="map-frame"
+    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.777!2d72.8362!3d18.9548!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce8047adaaab%3A0x5a63fbb02b7f09e5!2sUnique%20Pharmacy!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin"
+    allowfullscreen
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade"
+    title="Unique Pharmacy – Bhendi Bazaar, Mumbai">
+  </iframe>
+  <p style="font-size:12px;color:var(--md-on-surface-variant);margin-top:10px;display:flex;align-items:center;gap:5px;">
+    <span class="material-icons-round" style="font-size:15px;">place</span>
+    Shop No. G55, Al Ezz Tower, Bohri Mohalla, Bhendi Bazaar, Mumbai – 400003
+  </p>
+</div>
+
+<!-- ══ FOOTER ══ -->
+<footer>
+  <p class="footer-name">Unique Pharmacy</p>
+  <p class="footer-tagline">Your Health, Our Priority</p>
+  <div class="footer-btns">
+    <a class="footer-btn phone" href="tel:+919594290148">
+      <span class="material-icons-round">call</span> +91 95942 90148
+    </a>
+    <a class="footer-btn link" href="contact.html">
+      <span class="material-icons-round">contact_page</span> Contact Us
+    </a>
+    <a class="footer-btn link" href="about.html">
+      <span class="material-icons-round">info</span> About Us
+    </a>
+    <span class="footer-btn link" style="cursor:pointer;">
+      <span class="material-icons-round">policy</span> Privacy Policy
+    </span>
+  </div>
+  <small>© 2026 Unique Pharmacy. All rights reserved.</small>
+</footer>
+
+<script>
+(function(){ emailjs.init("YOUR_PUBLIC_KEY"); })();
+
+function sendMessage() {
+  const name  = document.getElementById('name').value.trim();
+  const phone = document.getElementById('phone').value.trim();
+  const type  = document.getElementById('queryType').value;
+  const msg   = document.getElementById('message').value.trim();
+
+  if (!name || !phone || !msg) {
+    alert('Please fill all fields properly');
+    return;
+  }
+
+  emailjs.send("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", { name, phone, type, message: msg })
+    .then(() => alert("Message sent successfully!"))
+    .catch(() => {});
+
+  const waMsg = `Hello, I am ${name}%0A📞 Phone: ${phone}%0A📌 Query: ${type}%0A📝 Message: ${msg}`;
+  window.open(`https://wa.me/919594290148?text=${waMsg}`, '_blank');
+}
+</script>
+
+</body>
+</html>
